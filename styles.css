@@ -11,9 +11,10 @@
   --ink: #21130e;
   --muted: #684b38;
   --line: rgba(80, 39, 25, .22);
-  --display: "Cinzel", Georgia, serif;
-  --brand: "Cinzel", Georgia, serif;
-  --text: "Libre Baskerville", Georgia, serif;
+  --display: "Roboto Condensed", Arial, sans-serif;
+  --brand: "Roboto Condensed", Arial, sans-serif;
+  --logo: "Josefin Sans", Arial, sans-serif;
+  --text: "Roboto Condensed", Arial, sans-serif;
 }
 
 body[data-theme="rodizio"] { --accent: #8a2f20; --accent-2: #c28a42; }
@@ -143,24 +144,19 @@ img {
 }
 
 .brand-logo--mark {
-  width: min(210px, 38vw);
+  width: min(190px, 35vw);
   max-height: 30svh;
-  padding: clamp(12px, 2vw, 20px);
-  background: rgba(17, 8, 6, .44);
-  border: 1px solid rgba(255, 238, 197, .25);
-  border-radius: 999px;
-  box-shadow:
-    0 20px 48px rgba(0, 0, 0, .42),
-    inset 0 0 34px rgba(255, 227, 168, .08);
-  filter: drop-shadow(0 20px 36px rgba(0, 0, 0, .48));
+  filter:
+    drop-shadow(0 18px 32px rgba(0, 0, 0, .58))
+    drop-shadow(0 0 18px rgba(255, 236, 198, .12));
 }
 
 .cover-title {
   color: var(--cream);
-  font-family: var(--display);
-  font-size: clamp(2.35rem, 7vw, 5.6rem);
-  font-weight: 700;
-  line-height: .96;
+  font-family: var(--logo);
+  font-size: clamp(2.65rem, 7vw, 5.9rem);
+  font-weight: 300;
+  line-height: .92;
   text-transform: uppercase;
   text-shadow: 0 18px 34px rgba(0, 0, 0, .5);
 }
